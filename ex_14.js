@@ -6,5 +6,11 @@ const Swiggy = [
     { hotel_Name: "Taco bell", cuisine: "Mexican", rating: 3, distance: 14 },
     { hotel_Name: "KFC", cuisine: "American", rating: 2, distance: 24 },
 ]
-let IndianCuisine = Swiggy.filter(i => i.cuisine == "Indian");
-console.log(IndianCuisine)
+// let IndianCuisine = Swiggy.filter(i => i.cuisine == "Indian");
+// console.log(IndianCuisine)
+// or
+for (let i = 0; i < Swiggy.length; i++) {
+    if (Swiggy[i].cuisine == "Indian") {
+        console.log(Swiggy[i])
+    }
+}

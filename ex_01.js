@@ -1,6 +1,3 @@
 const user = "subscribed";
-if (user == "subscribed") {
-    console.log("yes this user is subscribed")
-} else {
-    console.log("This user is not subscribed")
-}
+const result = (user == "subscribed") ? "yes the user is subscribed" : "the user is not subscribed"
+console.log(result)

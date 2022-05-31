@@ -1,9 +1,5 @@
-const total_balance = 500;
-let withdraw = 200;
-account_balance = total_balance - withdraw
-if (withdraw < total_balance) {
-    console.log(account_balance)
+function balance(total_balance, withdraw) {
+    let account_balance = total_balance - withdraw
+    return withdraw < total_balance ? account_balance : "low balance"
 }
-else {
-    console.log("low balance")
-}
+console.log(balance(500, 600))
